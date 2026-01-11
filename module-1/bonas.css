@@ -1,0 +1,43 @@
+h3{
+    color: blueviolet;
+}
+h3:hover{
+    color: aliceblue;
+    background-color: black;
+    font-size: 100px;
+}
+input:focus{
+    color: rgb(17, 143, 101);
+    padding: 20px;
+    outline: 0;
+    border: 1px solid peru;
+}
+a:visited{
+    color: red;
+}
+/* li:last-child{
+    color: aqua;
+} */
+ li:nth-child(2n){
+    color: brown;
+ }
+div{
+    background-color: aqua
+    ;
+    height: 400px;
+    width: 400px;
+    position:sticky;
+     bottom:0;
+   
+}
+.a{
+     background-color: #a3235d
+    ;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+   right: 0;
+   bottom: 0;
+top: auto;
+
+}
