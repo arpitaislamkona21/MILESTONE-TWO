@@ -1,0 +1,129 @@
+/* .container{
+    border: 2px solid salmon;
+    display: flex;
+    justify-content:space-between;
+    height: 550px;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+} */
+.box{
+    width: 100px;
+    height: 100px;
+    border: 2px dashed tomato;
+}
+nav{
+    display: flex;
+    justify-content:space-between ;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+.Login-from{
+    display: flex;
+    flex-direction: column;
+ 
+width: 50%; 
+/* border: 10px solid  blue;  */
+}
+.Login-from input{
+   margin-top: 20px;  
+}
+#from-container{
+    display: flex;
+    justify-content: center;
+    /* border: 10px solid red; */
+}
+
+.container{
+display: grid;
+/* grid-template-columns: 200px 200px 200px; */
+grid-template-columns: repeat(3,200px);
+justify-content: space-between;
+justify-items: f;
+}
+
+.item{
+    border: 1px solid red;
+}
+.calander{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(6, 50px);
+    row-gap: 20px;
+    column-gap: 10px;
+}
+.date , .day
+{
+    background-color: blue;
+    border-radius: 5px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+}
+.day{
+background-color: red;
+font-size: 1em;
+}
+
+
+
+.card{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+
+}
+.food{
+    border: 1px solid skyblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+.food img{
+    width: 100%;
+}
+/* @media screen and (max-width:100px) { 
+    .card{
+        grid-template-columns: repeat(1,1fr);
+    } */
+
+
+
+
+
+.foodcard
+{
+    display: grid
+    ;
+grid-template-columns: repeat(3,1fr);
+gap: 10px;
+}
+.fd{
+ border: 2px solid tomato;
+ padding: 10px;   
+ border-radius: 10px;
+ background-color: aquamarine;
+}
+.fd img{
+    width: 100%;
+}
+@media screen and (max-width:670px){
+    .foodcard{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .fd{
+        background-color: #ba7919;
+    }
+
+}
+@media screen and (min-width:670px) and (max-width:1000px){
+    .foodcard{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .fd{
+        background-color: blueviolet;
+    }
+}
