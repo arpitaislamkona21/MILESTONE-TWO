@@ -1,0 +1,36 @@
+.box{
+    background-color: aquamarine;
+    padding: 20px;
+   
+
+}
+.container{
+    display:grid;
+    gap: 30px;
+     grid-template-columns: repeat(4,1fr);
+     grid-template-rows: repeat(3,200px) 50px 50px;
+}
+.sidebar{
+grid-row: span 5;
+background-color: brown;
+}
+.footer{
+grid-column: span 3;
+background-color: blueviolet;
+}
+@media screen and (max-width:576px){
+    /* .container{
+        display: block;
+    } */
+    .container{
+    display:grid;
+    gap: 30px;
+     grid-template-columns: repeat(2,1fr);
+     background-color: cadetblue;
+     /* grid-template-rows: repeat(3,200px) 50px 50px; */
+}
+.box, .sidebar ,.footer{
+    grid-column: span 1;
+    grid-row: span 1;
+}
+}

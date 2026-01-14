@@ -1,0 +1,41 @@
+.box{
+    background-color: teal;
+    padding: 20px;
+    border-radius: 10px;
+    color: aliceblue;
+
+}
+.conteinar{
+    display: flex;
+    gap: 30px;
+}
+
+.items{
+    width: 100px;
+    background-color: brown;
+    padding:10px;
+}
+.box-container{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+    body{
+        background-color: brown;
+
+    }
+    .conteinar{
+        flex-direction: column;
+    }
+    .items{
+        width: 100%;
+        background-color: black;
+    }
+}
